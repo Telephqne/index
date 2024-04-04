@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telephqne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Rubik Scribble', cursive;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
 
+  #animatedText {
+    font-size: 2em;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .twitter-logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="animatedText">Telephone</div>
+<img src="https://files.catbox.moe/g4ch6e.gif" alt="Spin">
+<button class="twitter-logo" onclick="window.location='https://twitter.com/telephqne';">
+  <img src="https://files.catbox.moe/t36ils.png" alt="Twitter" style="width: 50px; height: 50px;">
+</button>
+
+<script>
+  window.onload = function() {
+    document.getElementById('animatedText').style.opacity = 1;
+  };
+</script>
+
+</body>
+</html>
