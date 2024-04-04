@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TELEPHONE</title>
+<title>TELEPHONE PORTAL</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
@@ -56,7 +56,16 @@
 </style>
 </head>
 <body>
-  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('https://files.catbox.moe/gqx43x.mp3'); 
+    audio.volume = 0.5; 
+    audio.play() 
+    .catch(error => {
+        console.error("your browser does not let you automatically play audio :(", error);
+    });
+});
+</script>
 <div id="animatedText">TELEPHONE</div>
 <img src="https://files.catbox.moe/g4ch6e.gif" alt="Spin">
 <button class="twitter-logo" onclick="window.location='https://twitter.com/telephqne';">
