@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGMACRAFT WEB V1.0</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        iframe {
+            margin-top: 20px;
+        }
+        .scrolling-text {
+            margin-top: 20px;
+            font-size: 48px;
+            font-weight: bold;
+            color: lime;
+            background: black;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            animation: scroll 10s linear infinite, flash 1s step-end infinite alternate;
+            text-transform: uppercase;
+        }
+        @keyframes scroll {
+            from {
+                left: 100%;
+            }
+            to {
+                left: -100%;
+            }
+        }
+        @keyframes flash {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://files.catbox.moe/zsg4un.html" width="480" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <a href="http://youarefucking.smelly.cc/sigma" class="scrolling-text">CLICK ME FOR DESKTOP</a>
+</body>
+</html>
